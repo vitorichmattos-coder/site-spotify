@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.navbar {
+  width: 300px;
+  background-color: rgb(18, 18, 18);
+  
+  
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.nav-logo{
+  display: flex;
+  width: 100%;
+  height: 65px;
+  background-color: #000;
+  align-items: center;
+justify-content: center;
+}
+
+.nav-logo i {
+   
+  font-size: 34px;
+  color: #b7b386;
+}
+.nav-library {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+.nav-library i,
+.nav-library p {
+  color: #b7b386;
+  font-size: 14px;
+}
+
+.nav-playlist,
+.nav-podcast {
+  text-align: center;
+  margin-left: 10px;
+ margin-right: 10px;
+  background-color: #323232;
+  padding: 16px;
+  border-radius: 5px;
+ 
+}
+
+.nav-playlist button,.nav-podcast button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+  padding: 6px 10px;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 15px;
+    margin-top: 16px;
+}
+
+.nav-playlist p,
+.nav-podcast p{
+font-size: 12px;
+}
+.nav-footer{
+    
+   margin-left: 35px;
+ margin-right: 10px;
+  margin-top: 130px;
+
+}
+
+.nav-footer a{
+    color: #a7a7a7;
+text-decoration: none;
+font-size: 10px;
+margin-right: 12px;
+margin-bottom: 8px;
+
+
+
+}
+
+.nav-lang-button button{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 6px 8px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-left: 50px;
+ margin-right: 10px;
+ 
+}
+
+main{
+  padding: 24px;
+  /* border:1px solid white; */
+flex-grow: 1;
+overflow-y: auto;
+}
+.search-bar{
+  display: flex;
+  align-items: center;
+  /* border:1px solid white; */
+  width: 100%;
+   height: 2px;
+  
+}
+
+.search-bar input{
+  margin-top: 10px;
+   background-color: #242424;
+  border: none;
+  color: #fff;
+  width: 250px;
+  height: 40px;
+  margin-right: 70px;
+  outline: none;
+  border-radius: 20px;
+  text-align: center;
+  /* border:1px solid white; */
+}
+
+.a{
+flex: 80%;
+/* border:1px solid white; */
+}
+.b{
+flex: 10%;
+/* border:1px solid white; */
+}
+
+.c{
+  display: flex;
+flex: 10%;
+/* border:1px solid white; */
+justify-content: center;
+align-items: center;
+}
+
+
+.btne,.aaa{
+border-top-right-radius: 20px;
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
+background-color:  rgb(255, 255, 255);
+padding: 6px 20px;
+border: none;
+}
+
+.btni{
+
+padding: 6px 10px;
+background-color:  transparent;
+color: rgb(171, 165, 165);
+border: none;
+
+}
+.btni:hover{
+color: white;
+
+}
+.artist-grid, .albums-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+  
+  gap: 24px;
+}
+
+
+.artist-card, .albunstiCard{
+background-color: rgb(18, 18, 18);
+text-align: center;
+border-radius: 8px;
+cursor: pointer;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+transition:background-color 0.5s ;
+
+
+}
+
+.artist-card:hover , .albunstiCard:hover{
+background-color: rgb(33, 33, 33);
+}
+
+.artist-card img {
+  border-radius: 50%;
+  width: 100%;
+   height: 230px; 
+   margin-bottom:16px ;
+  max-height: 70%;
+}
+
+.albunstiCard img{
+    width: 100%;
+   height: 200px; 
+   margin-bottom:16px ;
+  max-height: 70%;
+}
+
+
+.artist-card h3, .albunstiCard h3{
+font-size: 12px;
+color: #b7b386; 
+}
+
+.artist-card p, .albunstiCard p{
+font-size: 12px;
+}
+
+.content{
+margin-top: 40px;
+background-color: rgb(18, 18, 18);
+border-top-right-radius: 20px;
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
+padding: 20px;
+
+}
+
+.content h2{
+  color: rgb(255, 255, 255);
+padding-top: 20px;
+padding-left: 20px;
+padding-bottom: 20px;
+}
+
+.banner{
+  position: fixed;
+ display: flex;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 8px;
+  background: linear-gradient(90deg,#9f1984,#086d8f) ;
+}
+
+.banner h2{
+font-size: 14px;
+}
+
+.banner p{
+font-size: 10px;
+}
